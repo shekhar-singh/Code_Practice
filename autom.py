@@ -16,7 +16,7 @@ def main():
     Then make git commits for each random date-time string.
     """
 
-    start_date = date(2016, 4, 29)
+    start_date = date(2016, 4,1 )
     today = datetime.now().date()
 
     delta = today - start_date
