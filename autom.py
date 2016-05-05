@@ -58,9 +58,7 @@ def _make_commit_for_time(commit_time):
     call('git add .'.split())
     call(['git', 'commit', '-am', '"%s"' % commit_time, '--date="%s"' % commit_time])
 
-    # Beat their sooper anti-cheat algo If you make a bunch of historic commits
-    # and push them all at once, github won't change your heat map. So, just
-    # push after each commit.
+    
     call('git push origin master'.split())
 
 main()
